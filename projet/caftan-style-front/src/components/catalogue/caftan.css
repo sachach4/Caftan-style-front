@@ -1,0 +1,30 @@
+h2 {
+  display:flex;
+  align-items: center;
+}
+
+.caftan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.imagecaftan{
+  width: 100px;
+  height: 150px;
+}
+
+.nom{
+  text-align: center;
+  width: 100px;
+}
+.prix{
+  text-align: center;
+  width: 100px;
+}
+
+
+.cataloguecaftan {
+  display: flex;
+  flex-direction: row;
+}

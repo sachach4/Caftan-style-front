@@ -1,0 +1,26 @@
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #655757;
+  color: white;
+}
+.follow-div {
+  width: 20%;
+  margin-left: 30px;
+}
+
+.contact-div {
+  width: 20%;
+}
+
+.follow-div ul li a {
+  color: white;
+}
+
+.contact-div ul li a {
+  color: white;
+}
