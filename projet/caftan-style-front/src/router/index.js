@@ -1,8 +1,12 @@
 import React from "react";
+//import { Button } from 'reactstrap';
+
+
 import Acceuil from "../components/catalogue/Acceuil";
 import Caftan from "../components/catalogue/Caftan";
 import Babouche from "../components/catalogue/Babouche";
 import Djellaba from "../components/catalogue/Djellaba";
+import DetailArticle from "../components/catalogue/DetailArticle";
 //import Home from "../components/home/Home";
 //import logo from "../ass";
 import "./menu.css";
@@ -44,6 +48,9 @@ export default function AppRouter() {
             </Route>
             <Route path="/Babouche">
               <Babouche />
+            </Route>
+            <Route path="/:id">
+              <DetailArticle />
             </Route>
             <Route path="/">
               <Acceuil />
