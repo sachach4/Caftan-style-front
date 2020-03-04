@@ -1,12 +1,9 @@
 import React from "react";
 import { Slide } from 'react-slideshow-image';
 import "./caftan.css";
+import { Link } from "react-router-dom";
 
 function Acceuil() {
-
-
-
-
 const slideImages = [
   'assets/images.jpeg',
   'assets/images.jpeg',
@@ -26,6 +23,7 @@ const properties = {
   
   <div >
   <h2>Acceuil</h2>
+  
   <Slide {...properties}>
         <div className="each-slide">
           <div style={{'backgroundImage': `url(${slideImages[0]})`}}>

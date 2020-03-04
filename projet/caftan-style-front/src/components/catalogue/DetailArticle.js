@@ -7,18 +7,10 @@ import { useParams } from "react-router-dom";
 const initialState = {
   id:"",
   nom: "",
-
-Products:[
- {
-  id:"",
-  nom: "",
   prix:"",
   taille:"",
   image:"",
   stock:""
-}
-]
-
 };
 
 const Produit = () => {
@@ -41,19 +33,19 @@ const Produit = () => {
   };
 
   React.useEffect(() => {
+    
     getProduit(id);
   }, [id]);
-  console.log("image",detailProduit.Products[0].image)
+ // console.log("image",detailProduit.Products[0].image)
   return (
     <>
-      <h3>{detailProduit.Products[0].nom}</h3>
+       <h3>{detailProduit.nom}</h3>
 
 
-      <img className="imagecaftan" src={detailProduit.Products[0].image} />
+      <img className="imagecaftan" src={detailProduit.image} alt=''/>    
 
-      
-
-      <div className="detail">Prix:{detailProduit.Products[0].prix}</div>
+      <div className="detail">Prix:{detailProduit.prix}</div>
+      <div className="Descriptif">Descriptif:{detailProduit.descriptif}</div>
     </>
   );
 };

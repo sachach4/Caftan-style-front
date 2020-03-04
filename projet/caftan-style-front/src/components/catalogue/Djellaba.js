@@ -30,7 +30,7 @@ function Djellaba() {
             
             return (
               
-              <Link to={`/${jal.id}`} key={i}>
+              <Link to={`/${jal['Products.id']}`} key={i}>
               <div className="caftan">
                 <img className="imagecaftan" src={jal['Products.image']} />
                 <div className="nom"> {jal['Products.nom']}</div>

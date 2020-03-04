@@ -29,11 +29,13 @@ function Babouche() {
             
             return (
               
-              <Link to={`/${bab.id}`} key={i}>
+              <Link to={`/${bab['Products.id']}`} key={i}>
               <div className="caftan">
                 <img className="imagecaftan" src={bab['Products.image']} />
                 <div className="nom"> {bab['Products.nom']}</div>
                 <div className="prix"> {bab['Products.prix']}</div>
+                
+
               </div>
               </Link>
             );

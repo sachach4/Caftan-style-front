@@ -3,11 +3,12 @@ import "./caftan.css";
 import { Link } from "react-router-dom";
 
 function Caftan() {
-  const productAPI = "/api/categories/Djellaba";
+  const productAPI = "/api/categories/Caftan";
   const [caftan, setCaftan] = useState([]);
   const getProductData = async () => {
     const response = await fetch(productAPI);
     const data = await response.json();
+    console.log( 'caftan',data);
     setCaftan(data);
   
     console.log( 'caftan',data);
@@ -28,7 +29,7 @@ function Caftan() {
             
             return (
               
-              <Link to={`/${caf.id}`} key={i}>
+              <Link to={`/${caf['Products.id']}`} key={i}>
               <div className="caftan">
                 <img className="imagecaftan" src={caf['Products.image']} />
                 <div className="nom"> {caf['Products.nom']}</div>
