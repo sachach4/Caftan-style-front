@@ -3,14 +3,13 @@ import "./caftan.css";
 import { Link } from "react-router-dom";
 
 function Caftan() {
-  const productAPI = "/api/categories/Caftan";
+  const productAPI = "http://localhost:8000/api/categories/Caftan";
   const [caftan, setCaftan] = useState([]);
   const getProductData = async () => {
     const response = await fetch(productAPI);
     const data = await response.json();
     console.log( 'caftan',data);
     setCaftan(data);
-  
     console.log( 'caftan',data);
 
     //return babouche;
@@ -34,8 +33,10 @@ function Caftan() {
                 <img className="imagecaftan" src={caf['Products.image']} />
                 <div className="nom"> {caf['Products.nom']}</div>
                 <div className="prix"> {caf['Products.prix']}</div>
+                
               </div>
               </Link>
+              
             );
           })}
       </div>

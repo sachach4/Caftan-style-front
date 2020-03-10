@@ -22,14 +22,14 @@ function Djellaba() {
 
   return (
     <>
-      <h2>Caftan</h2>
+      <h2>Djellaba</h2>
       <div className="cataloguecaftan">
       
         {djellaba &&
           djellaba.map((jal, i) => {
             
             return (
-              
+              <>
               <Link to={`/${jal['Products.id']}`} key={i}>
               <div className="caftan">
                 <img className="imagecaftan" src={jal['Products.image']} />
@@ -37,6 +37,8 @@ function Djellaba() {
                 <div className="prix"> {jal['Products.prix']}</div>
               </div>
               </Link>
+              <button> Ajouter au Panier</button>
+              </>
             );
           })}
       </div>

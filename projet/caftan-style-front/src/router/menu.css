@@ -41,7 +41,10 @@ ul li{
 {
   display: table-cell;
 } */
-
+.auth{
+  width: 900px;
+  /* float:right; */
+}
 img {
   width: 100px;
 }
@@ -75,6 +78,35 @@ nav ul li a {
   font-size:  20px;
 }
 
-footer {
+/* footer {
   border: 1px solid black;
+} */
+ .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex; 
+  width: 100%;
+  justify-content: space-between;
+  background: #655757;
+  color: white;
+  bottom:0;
+ 
+
 }
+.follow-div {
+  width: 20%;
+  margin-left: 30px;
+}
+
+.contact-div {
+  width: 20%;
+}
+
+.follow-div ul li a {
+  color: white;
+}
+
+.contact-div ul li a {
+  color: white;
+} 

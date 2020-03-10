@@ -28,7 +28,7 @@ function Babouche() {
           babouche.map((bab, i) => {
             
             return (
-              
+              <>
               <Link to={`/${bab['Products.id']}`} key={i}>
               <div className="caftan">
                 <img className="imagecaftan" src={bab['Products.image']} />
@@ -38,9 +38,12 @@ function Babouche() {
 
               </div>
               </Link>
+              <button> Ajouter au Panier</button>
+              </>
             );
           })}
       </div>
+      
     </>
   );
 }
