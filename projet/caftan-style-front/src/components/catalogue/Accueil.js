@@ -22,7 +22,7 @@ const properties = {
     <>
   
   <div >
-  <h2>Acceuil</h2>
+  <h2>Accueil</h2>
   
   <Slide {...properties}>
         <div className="each-slide">

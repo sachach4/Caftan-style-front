@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-
+//import { Link } from "react-router-dom";
+import {connect} from "react-redux"
+import {addBasket} from "../../actions/addActions"
 // eslint-disable-next-line no-undef
 //const apiBaseURL = process.env.Rea
 
@@ -13,7 +15,7 @@ const initialState = {
   stock:""
 };
 
-const Produit = () => {
+const Produit = (props) => {
   const [detailProduit, setDetailProduit] = useState(initialState);
   const { id } = useParams();
   console.log(id);
@@ -46,8 +48,10 @@ const Produit = () => {
 
       <div className="detail">Prix:{detailProduit.prix}</div>
       <div className="Descriptif">Descriptif:{detailProduit.descriptif}</div>
+
+      <a onClick={()=>props.addBasket(detailProduit.nom)} className="addToCart" href="#">Ajouter au Panier</a>
     </>
   );
 };
+export default connect(null,{addBasket})(Produit);
 
-export default Produit;

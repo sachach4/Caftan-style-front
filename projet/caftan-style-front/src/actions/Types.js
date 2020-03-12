@@ -1,1 +1,3 @@
 export const CHECK_TOKEN= "CHECK_TOKEN";
+export const ADD_PRODUCT_BASKET="ADD_PRODUCT_BASKET";
+export const GET_NB_BASKET="GET_NB_BASKET";
